@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <title>Генератор бросков кубиков</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <div class="container">
+         <h1>Генератор бросков кубиков</h1>
+         <div class="row">
+            <div class="col-sm-4 col-xs-12">
+               <input type="text" class="form-control" id="dicenumber" placeholder="Количество кубиков">
+               <br>
+               <div class="checkbox">
+                  <label>
+                  <input type="checkbox" id="modifier" value="">
+                  Модификатор
+                  </label>
+               </div>
+               <button id="calculate_button" type="button" class="btn btn-md">Рассчитать</button>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+               <span>Значение на кубиках: &nbsp;<span id="dicesum"></span></span>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-3">
+               <h2>Обычный урон</h2>
+               <div id="usualdamage" class="result ">2</div>
+            </div>
+            <div class="col-md-3">
+               <h2>Критический урон</h2>
+               <div id="criticaldamage" class="result ">1</div>
+            </div>
+            <div class="col-md-3">
+               <h2>Модификатор</h2>
+               <div id="d12" class="d12 ">8</div>
+            </div>
+            <div class="col-md-3">
+               <h2>Таблица результатов</h2>
+               <table class="table" id="results">
+                  <tr>
+                     <th>Сум</td>
+                     <th>О</td>
+                     <th>Крит</td>
+                     <th>Мод</td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+      </div>
+      <script src="main.js"></script>
+   </body>
+</html>
+

@@ -1,0 +1,60 @@
+.container {
+  margin-top: 20px;
+}
+
+#calculate_button {
+  float: left;
+}
+
+.result {
+  font-size: 32px;
+  font-weight: bold;
+  color:#fff;
+  opacity: 0;
+  transition: opacity 2000ms;
+  width: 65px;
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+  padding-left: -1px;
+}
+
+.d12 {
+  color:#000;
+  width: 72px;
+  height: 72px;
+  line-height: 73px;
+  text-align: center;
+  opacity: 0;
+  font-size: 24px;
+  font-weight: bold;
+  transition: opacity 1000ms;
+  background: url(images/d12.jpg) no-repeat;
+}
+
+.show {
+  opacity: 1;
+}
+
+ .hide {
+  opacity: 0;
+}
+
+#usualdamage {
+  background: url(images/dice-usual.png) no-repeat;
+}
+
+#criticaldamage {
+  background: url(images/dice-crit.png) no-repeat;
+  color:#CF2128;
+}
+
+#calculate_button {
+  color: #FCCE12 !important;
+  background: #3a0001;
+}
+
+#calculate_button:hover {
+  color: #FCCE12;
+  background: #9C0007;
+}
